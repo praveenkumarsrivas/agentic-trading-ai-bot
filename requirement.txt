@@ -11,5 +11,5 @@ langchain_google_genai
 streamlit
 pinecone
 langchain_pinecone
-
+python-multipart
 -e .

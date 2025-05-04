@@ -1,9 +1,9 @@
 vector_db:
-  index_name: "ltrading-bot"
+  index_name: "trading-bot"
 
 embedding_model:
   provider: "google"
-  model_name: "model/text-embedding-004"
+  model_name: "models/embedding-001"
 
 llm:
   provider: "google"

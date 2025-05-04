@@ -50,20 +50,60 @@ class DataIngestion:
         """
         documents = []
         for uploaded_file in uploaded_files:
-            if uploaded_file.name.endswith(".pdf"):
+            if uploaded_file.filename.endswith(".pdf"):
                 with tempfile.NamedTemporaryFile(delete=False, suffix=".pdf") as temp_file:
-                    temp_file.write(uploaded_file.read())
+                    temp_file.write(uploaded_file.file.read())
                     loader = PyPDFLoader(temp_file.name)
                     documents.extend(loader.load())
 
-            elif uploaded_file.name.endswith(".docx"):
+            elif uploaded_file.filename.endswith(".docx"):
                 with tempfile.NamedTemporaryFile(delete=False, suffix=".docx") as temp_file:
-                    temp_file.write(uploaded_file.read())
+                    temp_file.write(uploaded_file.file.read())
                     loader = Docx2txtLoader(temp_file.name)
                     documents.extend(loader.load())
             else:
                 print(f"Unsupported file type: {uploaded_file.name}")
         return documents
+    # def load_documents(self, uploaded_files) -> List[Document]:
+    #     """
+    #     Load documents from uploaded files or file paths (PDF or DOCX).
+    #     """
+    #     documents = []
+
+    #     # If a single string is passed, wrap it in a list
+    #     if isinstance(uploaded_files, str):
+    #         uploaded_files = [uploaded_files]
+
+    #     for uploaded_file in uploaded_files:
+    #         # Handle string file paths
+    #         if isinstance(uploaded_file, str):
+    #             if uploaded_file.endswith(".pdf"):
+    #                 loader = PyPDFLoader(uploaded_file)
+    #                 documents.extend(loader.load())
+    #             elif uploaded_file.endswith(".docx"):
+    #                 loader = Docx2txtLoader(uploaded_file)
+    #                 documents.extend(loader.load())
+    #             else:
+    #                 print(f"Unsupported file type: {uploaded_file}")
+    #         else:
+    #             # Handle file-like objects (e.g., from Streamlit)
+    #             if uploaded_file.name.endswith(".pdf"):
+    #                 with tempfile.NamedTemporaryFile(delete=False, suffix=".pdf") as temp_file:
+    #                     temp_file.write(uploaded_file.read())
+    #                     loader = PyPDFLoader(temp_file.name)
+    #                     documents.extend(loader.load())
+
+    #             elif uploaded_file.name.endswith(".docx"):
+    #                 with tempfile.NamedTemporaryFile(delete=False, suffix=".docx") as temp_file:
+    #                     temp_file.write(uploaded_file.read())
+    #                     loader = Docx2txtLoader(temp_file.name)
+    #                     documents.extend(loader.load())
+
+    #             else:
+    #                 print(f"Unsupported file type: {uploaded_file.name}")
+
+    #     return documents
+
 
     def store_in_vector_db(self, documents: List[Document]):
         """
@@ -106,4 +146,5 @@ class DataIngestion:
         self.store_in_vector_db(documents)
       
 if __name__ == '__main__':
-    pass
+    obj = DataIngestion()
+    obj.run_pipeline("/Users/praveensrivas/Documents/GENERATIVE_AI/agentic-trading-bot/agentic-trading-bot/fallback_data/stock_market.pdf")
