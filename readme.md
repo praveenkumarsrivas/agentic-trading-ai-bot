@@ -5,6 +5,8 @@
 The **Agentic Trading System** is a multi-agent chatbot platform designed to assist users with stock market-related queries. It integrates various tools, APIs, and machine learning models to provide intelligent responses based on real-time data, user-uploaded documents, and pre-configured knowledge bases. The system is built using modern Python frameworks and libraries, including FastAPI, Streamlit, and LangChain.
 
 ---
+## Project System Design
+![alt text](project_flow.svg)
 
 ## Features
 
