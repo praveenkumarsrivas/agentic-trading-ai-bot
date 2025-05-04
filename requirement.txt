@@ -3,3 +3,13 @@ langchain
 langgraph
 tavily-python
 polygon
+langchain_community
+fastapi
+uvicorn
+streamlit
+langchain_google_genai
+streamlit
+pinecone
+langchain_pinecone
+
+-e .

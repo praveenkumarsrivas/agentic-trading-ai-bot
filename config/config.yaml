@@ -1,0 +1,17 @@
+vector_db:
+  index_name: "ltrading-bot"
+
+embedding_model:
+  provider: "google"
+  model_name: "model/text-embedding-004"
+
+llm:
+  provider: "google"
+  model_name: "gemini-1.5-pro"
+
+retriever:
+  top_k: 3
+
+tools:
+  tavily:
+    max_results: 5

@@ -1,14 +1,14 @@
 <mxfile host="65bd71144e">
     <diagram id="fust_rAFWf_8zKf6fCSN" name="Page-1">
-        <mxGraphModel dx="402" dy="1772" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="405" dy="1761" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="31" value="" style="group;fillColor=#eeeeee;strokeColor=#36393d;" vertex="1" connectable="0" parent="1">
-                    <mxGeometry y="-80" width="809" height="665" as="geometry"/>
+                <mxCell id="31" value="" style="group;fillColor=#eeeeee;strokeColor=#36393d;" parent="1" vertex="1" connectable="0">
+                    <mxGeometry y="-140" width="809" height="665" as="geometry"/>
                 </mxCell>
                 <mxCell id="16" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="31" vertex="1">
-                    <mxGeometry x="20" y="149.77" width="314.83" height="479.28" as="geometry"/>
+                    <mxGeometry x="20" y="90" width="314.83" height="539.05" as="geometry"/>
                 </mxCell>
                 <mxCell id="5" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;flowAnimation=1;" parent="31" source="2" target="4" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
@@ -35,7 +35,7 @@
                     <mxGeometry x="43.20427236315087" y="410.981981981982" width="150" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="14" value="Vector database:&lt;div&gt;Lence DB&lt;/div&gt;" style="image;html=1;image=img/lib/clip_art/computers/Database_128x128.png" parent="31" vertex="1">
-                    <mxGeometry x="248.42456608811753" y="183.32432432432432" width="64.80640854472631" height="69.4954954954955" as="geometry"/>
+                    <mxGeometry x="248.42456608811753" y="90.00432432432433" width="64.80640854472631" height="69.4954954954955" as="geometry"/>
                 </mxCell>
                 <mxCell id="17" value="Tools" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="31" vertex="1">
                     <mxGeometry x="102.61014686248332" y="629.0540540540541" width="50" height="30" as="geometry"/>
@@ -43,11 +43,17 @@
                 <mxCell id="18" value="LLM&lt;div&gt;(Groq,OpenAI,Gemini)&lt;/div&gt;" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.machine_learning;fillColor=#2E73B8;gradientColor=none;" parent="31" vertex="1">
                     <mxGeometry x="498.7393190921229" y="333.9977477477478" width="82.62817089452605" height="111.43243243243242" as="geometry"/>
                 </mxCell>
-                <mxCell id="19" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;flowAnimation=1;" parent="31" source="16" target="18" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
+                <mxCell id="22" style="edgeStyle=none;html=1;exitX=0;exitY=0.79;exitDx=0;exitDy=0;exitPerimeter=0;flowAnimation=1;entryX=0.963;entryY=0.611;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=2;rounded=0;curved=1;" parent="31" source="18" target="9" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="350" y="540"/>
+                        </Array>
+                    </mxGeometry>
                 </mxCell>
-                <mxCell id="22" style="edgeStyle=none;html=1;exitX=0;exitY=0.79;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.006;entryY=0.565;entryDx=0;entryDy=0;entryPerimeter=0;flowAnimation=1;" parent="31" source="18" target="16" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
+                <mxCell id="35" value="Fetching data related&lt;div&gt;to Share market&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="22">
+                    <mxGeometry x="-0.2619" y="-2" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
                 </mxCell>
                 <mxCell id="24" value="" style="sketch=0;html=1;aspect=fixed;strokeColor=none;shadow=0;fillColor=#3B8DF1;verticalAlign=top;labelPosition=center;verticalLabelPosition=bottom;shape=mxgraph.gcp2.big_query" parent="31" vertex="1">
                     <mxGeometry x="756.0747663551402" y="360.07054054054055" width="50.96261682242991" height="51.47224299065421" as="geometry"/>
@@ -76,6 +82,31 @@
                 </mxCell>
                 <mxCell id="28" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="31" vertex="1">
                     <mxGeometry x="669.6662216288386" y="339.68918918918916" width="20" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="" style="endArrow=classic;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;flowAnimation=1;strokeWidth=2;rounded=0;curved=1;" edge="1" parent="31" source="18" target="8">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="290" y="330" as="sourcePoint"/>
+                        <mxPoint x="340" y="280" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="36" value="Anything related to stock/share" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="32">
+                    <mxGeometry x="-0.3692" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="33" value="" style="endArrow=classic;html=1;flowAnimation=1;exitX=0;exitY=0.21;exitDx=0;exitDy=0;exitPerimeter=0;strokeWidth=2;rounded=0;curved=1;" edge="1" parent="31" source="18" target="7">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="290" y="330" as="sourcePoint"/>
+                        <mxPoint x="340" y="280" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="380" y="210"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="37" value="Genral answers/query&lt;div&gt;from own database&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="33">
+                    <mxGeometry x="-0.3304" y="-4" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
                 </mxCell>
                 <mxCell id="4" value="" style="image;html=1;image=img/lib/clip_art/finance/Stock_Up_128x128.png" parent="1" vertex="1">
                     <mxGeometry x="630" y="10" width="80" height="80" as="geometry"/>
