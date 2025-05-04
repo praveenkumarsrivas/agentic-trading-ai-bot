@@ -75,7 +75,43 @@ The system follows a modular architecture with the following components:
 ---
 
 ## Project Structure
-agentic-trading-bot/ ├── agent/ │ ├── agents.py │ ├── workflow.py ├── config/ │ ├── config.yaml │ ├── __init__.py ├── data_ingestion/ │ ├── ingestion_pipeline.py ├── data_models/ │ ├── models.py │ ├── __init__.py ├── exception/ │ ├── exceptions.py ├── logging/ │ ├── my_logging.py ├── notebook_experiments/ │ ├── experiments.ipynb ├── prompt_library/ │ ├── prompt.py │ ├── __init__.py ├── toolkit/ │ ├── tools.py │ ├── __init__.py ├── utils/ │ ├── model_loaders.py │ ├── config_loader.py │ ├── __init__.py ├── main.py ├── main2.py ├── streamlit_ui.py ├── setup.py ├── .env ├── .gitignore ├── requirement.txt
+```bash
+agentic-trading-bot/
+├── agent/
+│   ├── agents.py
+│   ├── workflow.py
+├── config/
+│   ├── config.yaml
+│   ├── __init__.py
+├── data_ingestion/
+│   ├── ingestion_pipeline.py
+├── data_models/
+│   ├── models.py
+│   ├── __init__.py
+├── exception/
+│   ├── exceptions.py
+├── logging/
+│   ├── my_logging.py
+├── notebook_experiments/
+│   ├── experiments.ipynb
+├── prompt_library/
+│   ├── prompt.py
+│   ├── __init__.py
+├── toolkit/
+│   ├── tools.py
+│   ├── __init__.py
+├── utils/
+│   ├── model_loaders.py
+│   ├── config_loader.py
+│   ├── __init__.py
+├── main.py
+├── main2.py
+├── streamlit_ui.py
+├── setup.py
+├── .env
+├── .gitignore
+├── requirement.txt
+```
 
 
 ---
