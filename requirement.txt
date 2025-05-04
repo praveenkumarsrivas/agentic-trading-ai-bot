@@ -12,4 +12,7 @@ streamlit
 pinecone
 langchain_pinecone
 python-multipart
+docx2txt
+
+
 -e .

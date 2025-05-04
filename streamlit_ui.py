@@ -43,8 +43,8 @@ if st.button("Ask"):
         with st.spinner("Thinking..."):
             payload = {"question": question}
             response = requests.post(f"{BASE_URL}/query", json=payload)
-            # st.write("Response Status Code:", response.status_code)
-            # st.write("Response Body:", response.text)  # Output the raw response text
+            st.write("Response Status Code:", response.status_code)
+            st.write("Response Body:", response.text)  # Output the raw response text
             if response.status_code == 200:
                 answer = response.json().get("answer", "No answer returned.")
                 st.markdown("### 💬 Answer")
