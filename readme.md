@@ -105,7 +105,6 @@ agentic-trading-bot/
 │   ├── config_loader.py
 │   ├── __init__.py
 ├── main.py
-├── main2.py
 ├── streamlit_ui.py
 ├── setup.py
 ├── .env
